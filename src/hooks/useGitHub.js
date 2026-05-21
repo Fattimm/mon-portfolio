@@ -26,8 +26,8 @@ export function useGitHubProfile() {
           following: data.following,
 
           // --- Données fixes ---
-          title: "Développeuse Fullstack Web & Mobile",
-          bio: "Étant passionnée par les technologies émergentes, je m'engage dans la conception et le développement d'applications à la fois modernes et efficaces, en passant par l'architecture backend jusqu'aux interfaces utilisateurs intuitives. Animée par la curiosité, j'apprécie de relever de nouveaux défis et d'enrichir mes compétences à travers des projets tangibles.",
+          title: "Développeuse Fullstack & Mobile",
+          bio: "Passionnée par la création d'applications modernes — du backend aux interfaces mobiles.",
           aboutMe: [
             "Étant passionnée par les technologies émergentes, je m'engage dans la conception et le développement d'applications à la fois modernes et efficaces, en passant par l'architecture backend jusqu'aux interfaces utilisateurs intuitives.",
             "Animée par la curiosité, j'apprécie de relever de nouveaux défis et d'enrichir mes compétences à travers des projets tangibles. J'accorde également une grande importance à l'analyse des besoins et à la compréhension des attentes des utilisateurs, afin de proposer des solutions innovantes, ergonomiques et adaptées.",
@@ -48,9 +48,9 @@ export function useGitHubProfile() {
         setProfile({
           name: "Fatoumata DIA",
           avatar: "/fatoumata_dia.jpg",
-          bio: "Développeuse Fullstack Web & Mobile passionnée par les technologies émergentes.",
+          bio: "Passionnée par la création d'applications modernes — du backend aux interfaces mobiles.",
           location: "Dakar, Sénégal",
-          title: "Développeuse Fullstack Web & Mobile",
+          title: "Développeuse Fullstack & Mobile",
           aboutMe: [
             "Développeuse Full-Stack Web & Mobile, passionnée par la création de solutions modernes et performantes.",
           ],

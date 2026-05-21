@@ -3,9 +3,9 @@
 export const skills = {
   frontend: ["React.js", "Angular", "Tailwind CSS", "TypeScript", "HTML5", "CSS3", "JavaScript"],
   backend: ["Node.js", "Express.js", "Laravel", "Django", "API RESTful"],
-  mobile: [ "Dart"],
+  mobile: ["Flutter", "Dart"],
   database: ["MongoDB", "PostgreSQL", "MySQL", "Prisma", "Firebase"],
-  outils: ["Git", "GitHub", "Cloudinary", "Figma", "Postman", "VS Code"],
+  outils: ["Git", "GitHub", "Cloudinary", "Figma", "Postman", "VS Code", "Vercel", "Render", "Railway"],
   methodologies: ["SOLID", "MVC", "Analyse fonctionnelle", "Documentation technique"],
   softSkills: [
     "Travail en équipe et collaboration interfonctionnelle",
