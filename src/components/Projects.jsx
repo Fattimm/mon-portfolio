@@ -2,17 +2,6 @@ import React, { useState } from 'react';
 import { Github, ExternalLink } from 'lucide-react';
 import { useGitHubProjects } from '../hooks/useGitHub';
 
-const LANG_COLORS = {
-  JavaScript: '#F7DF1E',
-  TypeScript: '#3178C6',
-  Python:     '#3776AB',
-  PHP:        '#777BB4',
-  HTML:       '#E34F26',
-  CSS:        '#1572B6',
-  Vue:        '#42B883',
-  Java:       '#ED8B00',
-};
-
 function ProjectThumbnail({ project }) {
   const [imgError, setImgError] = useState(false);
   const imageSrc = `/projects/${project.name}.png`;
@@ -99,23 +88,17 @@ export default function Projects({ darkMode }) {
                     {project.description || 'Pas de description disponible.'}
                   </p>
 
-                  {/* Langage */}
-                  {project.language && (
+                  {/* Topics (technos) */}
+                  {project.topics?.filter(t => t !== 'portfolio').length > 0 && (
                     <div className="flex flex-wrap gap-2 mb-4">
-                      <span
-                        className="px-2 py-1 text-xs rounded-full bg-purple-500/20 text-purple-400 flex items-center gap-1"
-                      >
+                      {project.topics.filter(t => t !== 'portfolio').map(topic => (
                         <span
-                          style={{ backgroundColor: LANG_COLORS[project.language] || '#8b5cf6' }}
-                          className="w-2 h-2 rounded-full inline-block"
-                        />
-                        {project.language}
-                      </span>
-                      {project.stargazers_count > 0 && (
-                        <span className="px-2 py-1 text-xs rounded-full bg-yellow-500/20 text-yellow-400">
-                          ⭐ {project.stargazers_count}
+                          key={topic}
+                          className="px-2 py-1 text-xs rounded-full bg-purple-500/20 text-purple-400"
+                        >
+                          {topic}
                         </span>
-                      )}
+                      ))}
                     </div>
                   )}
 
